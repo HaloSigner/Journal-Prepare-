@@ -1,4 +1,4 @@
-# **Code for "Integrating Synthetic Data for Improved DNA Damage Response Profiling in Drug Discovery"**
+# **"Integrating Synthetic Data for Improved DNA Damage Response Profiling in Drug Discovery"**
 
 This repository contains the implementation details and code used in the study **"Integrating Synthetic Data for Improved DNA Damage Response Profiling in Drug Discovery"**, which demonstrates the use of synthetic data augmentation and machine learning for DNA damage response (DDR) profiling.
 
