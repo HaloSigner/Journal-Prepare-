@@ -26,4 +26,4 @@ This repository contains the implementation details and code used in the study *
 ├── 3. Model Training/          
 │   ├── code/                        # Scripts for DNA damage response model training and application
 ├── README.md                        # Repository documentation
-└── requirements.txt                 # Required Python packages
+└── Raw Data/                        # Raw Data
