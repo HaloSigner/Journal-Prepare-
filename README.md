@@ -28,16 +28,17 @@ This study introduces a machine learning framework for predicting DNA damage res
 │   ├── data/                        # Sample synthetic datasets
 │   ├── env/                         # Environment setup files (environment.yml)
 ├── 3. Model Training/                
-│   ├── code/        # Scripts for DNA damage response model training and application
+│   ├── code/                        # Scripts for DNA damage response model training and application
 ├── 4. Model Interpretation/
-│   ├── code/        
+│   ├── code/                        # SHAP analysis scripts
 ├── README.md                        # Repository documentation
 └── Raw Data/                        # Raw Data
 
 
 
----
 
+---
+'''
 ## 📊 Datasets
 
 ### 🔹 IDR-0080
@@ -138,3 +139,4 @@ MIT License © 2025
 
 **Chaeyoung Seo**  
 📧 Email: kojkos@gmail.com
+'''
