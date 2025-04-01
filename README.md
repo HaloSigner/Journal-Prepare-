@@ -35,6 +35,7 @@ This study introduces a machine learning framework for predicting DNA damage res
 └── Raw Data/                        # Raw Data
 
 
+
 ---
 
 ## 📊 Datasets
@@ -48,9 +49,9 @@ This study introduces a machine learning framework for predicting DNA damage res
 - **Source**: [GigaDB Dataset](https://gigadb.org/dataset/view/id/100351)
 - 30,616 compound treatments in U2OS cells.
 
-Preprocessing steps included:
-- Aggregation → Median-of-Z-scores (MODZ)
-- Normalization → MAD scaling
+**Preprocessing steps**:
+- Aggregation → Median-of-Z-scores (MODZ)  
+- Normalization → MAD scaling  
 - Feature selection → Shared + informative features only
 
 ---
@@ -64,10 +65,10 @@ We used four generative models implemented via [SDV (Synthetic Data Vault)](http
 - Variational Autoencoder (VAE)
 - CopulaGAN
 
-### 🧪 Fidelity Metrics:
-- **Column Shape Score**
-- **Column Pair Trends Score**
-- **Combined Similarity**
+### 🧪 Fidelity Metrics
+- Column Shape Score
+- Column Pair Trends Score
+- Combined Similarity
 
 > Gaussian Copula outperformed all others in fidelity and downstream model performance.
 
@@ -76,17 +77,17 @@ We used four generative models implemented via [SDV (Synthetic Data Vault)](http
 ## 🤖 Machine Learning Pipeline
 
 We trained four classifiers:
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Stochastic Gradient Descent Classifier (SGD)
+- Logistic Regression  
+- Support Vector Machine (SVM)  
+- Stochastic Gradient Descent Classifier (SGD)  
 - LightGBM
 
-### 🧠 Training Scenarios:
-- Real data only (imbalanced / oversampled)
-- Synthetic data only
-- Real + Synthetic (blended)
-- Balanced vs. Imbalanced variants
-- Class weights & 5-fold stratified CV
+### 🧠 Training Scenarios
+- Real data only (imbalanced / oversampled)  
+- Synthetic data only  
+- Real + Synthetic (blended)  
+- Balanced vs. Imbalanced  
+- Class weights + 5-fold CV
 
 ---
 
@@ -98,7 +99,7 @@ We trained four classifiers:
 | Synthetic Only (GC)      | SVM        | 0.80          | 0.90    |
 | Real Only (imbalanced)   | SVM        | 0.32          | 0.68    |
 
-- **SHAP analysis** revealed 3 major features:  
+- **SHAP analysis** revealed top contributing features:
   - Cytoplasm_Texture_Gabor_AGP_10  
   - Cytoplasm_Texture_InverseDifferenceMoment_AGP_5_0  
   - Cytoplasm_RadialDistribution_FracAtD_AGP_4of4
@@ -107,31 +108,33 @@ We trained four classifiers:
 
 ## 🌍 External Validation: CPG-0012
 
-- Applied best-performing SVM (real + synthetic) to 30,616 compounds
-- Predicted **9,923 hits** with high DDR scores
-- Detected known DDR inducers (e.g., doxorubicin, etoposide, vincristine)
-- Identified **novel candidate compounds**:
-  - **Tetrindole**
-  - **LY-2183240**
-  - **KF38789**
+- Applied the best model (real + synthetic SVM) to 30,616 compounds  
+- Identified **9,923 potential DDR-inducing compounds**
+- Detected known DDR inducers (doxorubicin, vincristine, etoposide, cisplatin)
+- Prioritized **novel candidates**:
+  - Tetrindole  
+  - LY-2183240  
+  - KF38789
 
 ---
 
 ## 🧪 Experimental Validation
 
-### ✅ γH2AX staining
-- Flow cytometry confirmed increased DNA damage in U2OS cells
+### ✅ γH2AX Staining (Flow Cytometry)
+- All three candidates induced γH2AX accumulation in U2OS cells
 
-### ✅ Cell viability assay (CellTiter-Glo®)
-- All 3 selected candidates significantly reduced cell viability in a dose-dependent manner
+### ✅ Cell Viability Assay (CellTiter-Glo)
+- Dose-dependent reduction in viability for all three compounds
 
 ---
 
+## 🧾 License
 
-## License
-- MIT License © 2025
+MIT License © 2025
 
-## Contact
-- Chaeyoung Seo
-- kojkos@gmail.com
+---
 
+## 📬 Contact
+
+**Chaeyoung Seo**  
+📧 Email: kojkos@gmail.com
