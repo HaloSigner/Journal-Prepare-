@@ -95,11 +95,11 @@ We trained four classifiers:
 
 ## 📈 Key Results
 
-| Data Type                | Best Model | F1 (High DDR) | AUC-ROC |
-|--------------------------|------------|---------------|---------|
-| Real + Gaussian Copula   | SVM        | **0.87**      | **0.94**|
-| Synthetic Only (GC)      | SVM        | 0.80          | 0.90    |
-| Real Only (imbalanced)   | SVM        | 0.32          | 0.68    |
+| Data Type                | Best Model | F1 (High DDR) |
+|--------------------------|------------|---------------|
+| Real + Gaussian Copula   | SVM        | **0.87**      | 
+| Synthetic Only (GC)      | SVM        | 0.80          |         
+| Real Only (imbalanced)   | SVM        | 0.32          |         
 
 - **SHAP analysis** revealed top contributing features:
   - Cytoplasm_Texture_Gabor_AGP_10  
@@ -111,7 +111,7 @@ We trained four classifiers:
 ## 🌍 External Validation: CPG-0012
 
 - Applied the best model (real + synthetic SVM) to 30,616 compounds  
-- Identified **9,923 potential DDR-inducing compounds**
+- Identified **1,089 potential DDR-inducing compounds**
 - Detected known DDR inducers (doxorubicin, vincristine, etoposide, cisplatin)
 - Prioritized **novel candidates**:
   - Tetrindole  
