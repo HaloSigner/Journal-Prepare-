@@ -29,8 +29,10 @@ This study introduces a machine learning framework for predicting DNA damage res
 │   ├── env/                         # Environment setup files (environment.yml)
 ├── 3. Model Training/                
 │   ├── code/                        # Scripts for DNA damage response model training and application
+│   ├── env/                          
 ├── 4. Model Interpretation/
 │   ├── code/                        # SHAP analysis scripts
+│   ├── env/
 ├── README.md                        # Repository documentation
 └── Raw Data/                        # Raw Data
 
