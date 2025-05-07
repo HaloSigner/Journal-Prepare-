@@ -21,11 +21,11 @@ This study introduces a machine learning framework for predicting DNA damage res
 ```plaintext
 ├── 1. Data Preprocessing/            
 │   ├── code/                        # Scripts for data distribution checks, preprocessing, and binarization
-│   ├── data/                        # Sample datasets for preprocessing tasks
+│   ├── data/                        # Datasets for preprocessing tasks
 │   ├── env/                         # Environment setup files (env_base.yml)
 ├── 2. Synthetic Data Generation/          
 │   ├── code/                        # Scripts for generating synthetic data
-│   ├── data/                        # Sample synthetic datasets
+│   ├── data/                        # Synthetic datasets
 │   ├── env/                         # Environment setup files (environment.yml)
 ├── 3. Model Training/                
 │   ├── code/                        # Scripts for DNA damage response model training and application
