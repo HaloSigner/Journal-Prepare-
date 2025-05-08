@@ -1,8 +1,8 @@
-# Identification of the DNA Damage through Augmented Cell Painting Profiles and Experimental Analysis
+# Predicting DNA Damage Response Using Synthetic Cell Painting Profiles and Experimental Analysis
 
 This repository provides the full implementation for the manuscript:
 
-📄 **Title:** Identification of the DNA Damage through Augmented Cell Painting Profiles and Experimental Analysis  
+📄 **Title:** Predicting DNA Damage Response Using Synthetic Cell Painting Profiles and Experimental Analysis
 
 ---
 
