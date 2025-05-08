@@ -117,8 +117,6 @@ We trained four classifiers:
 
 ## Future Work
 
-To strengthen and extend this framework—and in anticipation of reviewer feedback—we plan to:
-
 1. **Broaden biological scope:**  
    - Incorporate multiple cancer and non-cancer cell lines (beyond U2OS, A549, ES2, HCC44) to assess and improve model generalizability across diverse cellular contexts.  
    - Integrate multi-concentration and time-course Cell Painting profiles to capture dynamic DDR induction kinetics.
