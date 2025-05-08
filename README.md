@@ -93,20 +93,6 @@ We trained four classifiers:
 - Balanced vs. Imbalanced  
 - Class weights + 5-fold CV
 
----
-
-## 📈 Key Results
-
-| Data Type                | Best Model | F1 (High DDR) |
-|--------------------------|------------|---------------|
-| Real + Gaussian Copula   | SVM        | **0.87**      | 
-| Synthetic Only (GC)      | SVM        | 0.80          |         
-| Real Only (imbalanced)   | SVM        | 0.32          |         
-
-- **SHAP analysis** revealed top contributing features:
-  - Cytoplasm_Texture_Gabor_AGP_10  
-  - Cytoplasm_Texture_InverseDifferenceMoment_AGP_5_0  
-  - Cytoplasm_RadialDistribution_FracAtD_AGP_4of4
 
 ---
 
