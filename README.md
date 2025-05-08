@@ -10,9 +10,6 @@ This repository provides the full implementation for the manuscript:
 
 This study introduces a machine learning framework for predicting DNA damage response (DDR) from high-dimensional phenotypic profiles extracted via Cell Painting assays. To overcome data scarcity and class imbalance, we generated synthetic data using generative models and validated model predictions both computationally and experimentally.
 
-<p align="center">
-  <img src="Figure1_Graphic_Abstract.png" width="700" alt="Graphical Abstract">
-</p>
 
 ---
 
