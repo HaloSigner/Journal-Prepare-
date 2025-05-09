@@ -113,35 +113,6 @@ We trained four classifiers:
 ### ✅ Cell Viability Assay (CellTiter-Glo)
 - Dose-dependent reduction in viability for all three compounds
 
----
-
-## Future Work
-
-1. **Broaden biological scope:**  
-   - Incorporate multiple cancer and non-cancer cell lines (beyond U2OS, A549, ES2, HCC44) to assess and improve model generalizability across diverse cellular contexts.  
-   - Integrate multi-concentration and time-course Cell Painting profiles to capture dynamic DDR induction kinetics.
-
-2. **Mitigate batch and domain shifts:**  
-   - Implement advanced domain adaptation techniques (e.g. adversarial alignment, CORAL) to harmonize CRISPR-based (idr-0080) and small-molecule (cpg-0012) datasets, reducing batch effects.  
-   - Explore transfer-learning workflows to fine-tune the synthetic-augmented model on new imaging platforms or staining protocols.
-
-3. **Advance synthetic data generation:**  
-   - Evaluate state-of-the-art generative models (diffusion models, normalizing flows) for higher-fidelity feature simulation and improved minority-class coverage.  
-   - Develop active-learning loops that target low-confidence regions in feature space for on-demand synthetic sample generation.
-
-4. **Deepen mechanistic validation:**  
-   - Perform orthogonal assays (comet assay, PARP cleavage, cell-cycle profiling) to confirm on- and off-target DDR mechanisms of novel hits.  
-   - Validate top candidates in 3D spheroid models or in vivo xenografts to assess translational potential.
-
-5. **Integrate multi-omics and multi-modal imaging:**  
-   - Combine Cell Painting readouts with transcriptomic or proteomic signatures to capture complementary molecular phenotypes and boost predictive power.  
-   - Leverage live-cell and time-lapse imaging data to enrich feature space with temporal dynamics.
-
-6. **Enable prospective, high-throughput screening:**  
-   - Deploy the pipeline within automated screening platforms for real-time DDR prediction during large-scale compound libraries.  
-   - Build interactive dashboards for streamlined visualization and decision support by drug-discovery teams.
-
-These enhancements will not only address potential reviewer concerns around generalizability, batch effects, and mechanistic depth but also pave the way for robust, clinically relevant phenotypic prescreening in drug discovery.
 
 ---
 
